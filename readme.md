@@ -24,10 +24,10 @@ As a result of workflow the task is to hava a database of job postings where it 
 ![Arhitecture diagram](./images/pipeline_diagram.png)
 
 ## Approach to Problem
- 1. [Create infrastructure for GCP via Terraform](initial_setup.md):
-   - create GCP project and VM to run Airflow
+ 1. [Create infrastructure for GCP via Terraform](code/terraform/main.tf):
+   - [create EC2 instance](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:instanceState=running)
    - create virtual environment, copy scraper files and run crontab
- 2. [Security infrastructure](security infrastructure.md)
+ 2. [Security infrastructure](security_infrastructure.md)
    - create policy alowing access to S3 bucket
    - create roles for S3, Lambda and Glue
    - asign policies to roles
@@ -37,12 +37,6 @@ As a result of workflow the task is to hava a database of job postings where it 
    - make a Glue workflow to cretae database, tables and transform json to parquet format
    - analise with Athena
 
-## To reproduce project:
- 1. Create VM on AWS
- 2. Follow instructions [here](initial_setup.md)
- 3. git clone project
-
- 
 
 
 
