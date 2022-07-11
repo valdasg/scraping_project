@@ -1,7 +1,6 @@
 # from cv_bankas_parse import cv_bankas_parse
 import boto3, os
 
-os.environ.setdefault('AWS_DEFAULT', 'valdas')
 def get_client():
     return boto3.client('s3')
 
