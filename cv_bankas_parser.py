@@ -25,13 +25,13 @@ def cv_bankas_parser():
                 location = listing.find('span.list_city')[0].text
             except Exception:
                 location = ''
+
             try:
                 salary_str = listing.find('span.salary_amount')[0].text
-                salary = list(re.split('-| ', salary_str))
-                        
-                
+                salary = list(re.split('-| ', salary_str))               
             except Exception:
                 salary = ''
+            
             try:
                 salary_payment = listing.find('span.salary_calculation')[0].text
                 
@@ -68,7 +68,7 @@ def cv_bankas_parser():
 
 
     # create a session
-    s = HTMLSession()
+    s = HTMLSession()s
     r = s.get(url)    
 
     # get highest pagination number for loop
