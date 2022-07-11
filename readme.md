@@ -24,7 +24,7 @@ As a result of workflow the task is to hava a database of job postings where it 
 ![Arhitecture diagram](./images/pipeline_diagram.png)
 
 ## Approach to Problem
- 1. [Create infrastructure for GCP via Terraform](code/terraform/main.tf):
+ 1. [Create infrastructure for GCP via Terraform](terraform/main.tf):
    - [create EC2 instance](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:instanceState=running)
    - create virtual environment, copy scraper files and run crontab
  2. [Security infrastructure](security_infrastructure.md)

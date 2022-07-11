@@ -43,14 +43,19 @@ Sample dashboard on Hex platfor is [here](https://app.hex.tech/c30abd41-93ac-4b2
 
 Few interesting observations as of 2022 July 11:
 1. Number of posted job ads:
+
 ![number_of_ads](images/number_of_job_ads.png)
 2. Average salary to offered:
+
 ![average_salary](images/average_salary.png)
 3. Most popular locations:
+
 ![locations](images/most_pupular_locations.png)
 5. Best paid locations:
+
 ![best_paid_locations](images/best_paid_locations.png)
 6. Best paying employers:
+
 ![Best_employers](images/best_paying_employers.png)
 
 
